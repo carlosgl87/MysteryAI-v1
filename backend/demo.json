@@ -1,0 +1,126 @@
+{
+  "id": "demo",
+  "name": "Benchmark de admisiones",
+  "sector": "Educación",
+  "offer": "Programa de software · virtual · 24 meses",
+  "sample": 3,
+  "status": "complete",
+  "date": "Nov 2026",
+  "own": {
+    "id": "own",
+    "name": "Instituto Horizonte",
+    "phones": [
+      {
+        "id": "h1",
+        "label": "Admisiones central",
+        "number": "+51 900 000 101",
+        "kind": "Interno"
+      },
+      {
+        "id": "h2",
+        "label": "Admisiones digital",
+        "number": "+51 900 000 102",
+        "kind": "Tercerizado"
+      }
+    ]
+  },
+  "competitors": [
+    {
+      "id": "nova",
+      "name": "Nova Técnica",
+      "phones": [
+        {
+          "id": "n1",
+          "label": "Admisiones central",
+          "number": "+51 900 000 201",
+          "kind": "Sin especificar"
+        },
+        {
+          "id": "n2",
+          "label": "Admisiones digital",
+          "number": "+51 900 000 202",
+          "kind": "Sin especificar"
+        }
+      ]
+    },
+    {
+      "id": "vector",
+      "name": "Instituto Vector",
+      "phones": [
+        {
+          "id": "v1",
+          "label": "Admisiones central",
+          "number": "+51 900 000 301",
+          "kind": "Sin especificar"
+        },
+        {
+          "id": "v2",
+          "label": "Informes",
+          "number": "+51 900 000 302",
+          "kind": "Sin especificar"
+        }
+      ]
+    }
+  ],
+  "criteria": [
+    {
+      "id": "speed",
+      "name": "Tiempo de respuesta",
+      "desc": "Minutos entre la consulta y la primera respuesta humana.",
+      "scope": "all",
+      "mode": "auto",
+      "weight": 1,
+      "type": "base"
+    },
+    {
+      "id": "need",
+      "name": "Comprensión de la necesidad",
+      "desc": "Pregunta por el objetivo o contexto antes de recomendar.",
+      "scope": "all",
+      "mode": "auto",
+      "weight": 1,
+      "type": "base"
+    },
+    {
+      "id": "clarity",
+      "name": "Claridad de la respuesta",
+      "desc": "Explica requisitos, costos o condiciones sin ambigüedades.",
+      "scope": "all",
+      "mode": "auto",
+      "weight": 1,
+      "type": "base"
+    },
+    {
+      "id": "objection",
+      "name": "Manejo de objeciones",
+      "desc": "Reconoce la preocupación y ofrece una alternativa concreta.",
+      "scope": "all",
+      "mode": "prompt",
+      "weight": 1,
+      "type": "base"
+    },
+    {
+      "id": "next",
+      "name": "Siguiente paso",
+      "desc": "Propone un paso concreto dentro de la conversación.",
+      "scope": "all",
+      "mode": "auto",
+      "weight": 1,
+      "type": "base"
+    },
+    {
+      "id": "intl",
+      "name": "Internacionalidad",
+      "desc": "Explica un beneficio internacional con un ejemplo concreto.",
+      "weight": 1,
+      "scope": "all",
+      "mode": "prompt",
+      "type": "custom"
+    }
+  ],
+  "scenarios": [
+    "price",
+    "recommend",
+    "object"
+  ]
+}

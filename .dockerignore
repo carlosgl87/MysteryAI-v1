@@ -1,0 +1,9 @@
+.git
+.venv
+work
+__pycache__
+.pytest_cache
+.env*
+!.env.example
+tests
+requirements-dev.txt
